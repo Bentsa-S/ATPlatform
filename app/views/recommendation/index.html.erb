@@ -1,0 +1,16 @@
+<h1>recommendation</h1>
+
+
+<% @cars.each do |car| %>
+    <%= link_to recommendation_path(car), :method => :get do %>
+        <%= car.model %>
+        <%= car.year %>
+        <%= car.run %>
+        <%= car.brown %>
+        <%= car.price %>
+        <%= car.city %>
+        <%= car.vin_code %>
+    <% end %>
+    <br>
+    
+<% end %>

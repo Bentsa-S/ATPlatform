@@ -1,0 +1,24 @@
+<%require 'date'
+%>
+<h1>recent</h1>
+
+<%time = Time.now%>
+<% also_t = time - 15 * 24 * 60 * 60 %>
+<% @cars.each do |car| %>
+    <%ago_t = car.created_at - also_t%>
+
+    <% if 0 < (car.created_at - also_t) %>
+        <%= link_to recommendation_path(car), :method => :get do %>
+            <%= car.model %>
+            <%= car.year %>
+            <%= car.run %>
+            <%= car.brown %>
+            <%= car.price %>
+            <%= car.city %>
+            <%= car.vin_code %>
+            <%# car.created_at.strftime('%Y-%m-%d') %>
+        <% end %>
+    <% end %>
+
+    <br>
+<% end %>

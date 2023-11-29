@@ -1,0 +1,39 @@
+<h1>add avto</h1>
+<%= form_with model: @car do |form| %>
+    <p>Марка </p>
+    <%= form.text_field :brand %>
+    <p>Модель </p>
+    <%= form.text_field :model %>
+    <p>Модифiкацiя </p>
+    <%= form.text_field :modification %>
+    <p>Рiк </p>
+    <%= form.text_field :year %>
+    <p>Цiна в $ </p>
+    <%= form.text_field :price %>
+    <p>Пробiг </p>
+    <%= form.text_field :run %>
+    <p>Пвливо </p>
+    <%= form.text_field :brown %>
+    <p>Обэм двигуна </p>
+    <%= form.text_field :engine_capaciti %>
+    <p>Привiд </p>
+    <%= form.text_field :occasion %>
+    <p>Стан </p>
+    <%= form.text_field :state %>
+    <p>Колiр </p>
+    <%= form.text_field :color %>
+    <p>Область </p>
+    <%= form.text_field :region %>
+    <p>Мiсто </p>
+    <%= form.text_field :city %>
+    <p>Опис </p>
+    <%= form.text_area :description %>
+    <p>Вiн код </p>
+    <%= form.text_field :vin_code %>
+    <p>ДТП </p>
+    <%= form.text_field :accident %>
+    <p>Номер телефону </p>
+    <%= form.text_field :tel %>
+
+    <%= form.submit "Додати авто" %>
+<%end%>

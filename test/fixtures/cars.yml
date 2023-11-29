@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  model: MyString
+  modification: MyString
+  year: 1
+  price: 1
+  run: 1
+  brown: MyString
+  engine_capaciti: MyString
+  occasion: MyString
+  state: MyString
+  color: MyString
+  region: MyString
+  city: MyString
+  description: MyText
+  vin_code: MyString
+  accident: MyString
+  technical_condition: MyString
+  tel: 1
+
+two:
+  brand: MyString
+  model: MyString
+  modification: MyString
+  year: 1
+  price: 1
+  run: 1
+  brown: MyString
+  engine_capaciti: MyString
+  occasion: MyString
+  state: MyString
+  color: MyString
+  region: MyString
+  city: MyString
+  description: MyText
+  vin_code: MyString
+  accident: MyString
+  technical_condition: MyString
+  tel: 1
