@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_11_25_145551) do
+ActiveRecord::Schema.define(version: 2023_11_29_151211) do
 
   create_table "cars", force: :cascade do |t|
     t.string "brand"
@@ -31,6 +31,11 @@ ActiveRecord::Schema.define(version: 2023_11_25_145551) do
     t.string "accident"
     t.string "technical_condition"
     t.integer "tel"
+    t.string "max_fuel_consumption"
+    t.string "min_fuel_consumption"
+    t.string "middle_fuel_consumption"
+    t.string "type_gears"
+    t.integer "dillers"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -39,7 +44,7 @@ ActiveRecord::Schema.define(version: 2023_11_25_145551) do
     t.string "first_name"
     t.string "last_name"
     t.string "email"
-    t.string "passwort"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

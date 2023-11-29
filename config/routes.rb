@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   post '/add', to: 'add#new'
   get '/recommendation/:id', to: 'recommendation#show'
   get '/registration', to: 'registration#index'
+  post '/registration', to: 'registration#new'
+  post '/registration', to: 'registration#create'
 
 end

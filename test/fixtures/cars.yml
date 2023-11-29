@@ -19,6 +19,11 @@ one:
   accident: MyString
   technical_condition: MyString
   tel: 1
+  max_fuel_consumption: MyString
+  min_fuel_consumption: MyString
+  middle_fuel_consumption: MyString
+  type_gears: MyString
+  dillers: 1
 
 two:
   brand: MyString
@@ -39,3 +44,8 @@ two:
   accident: MyString
   technical_condition: MyString
   tel: 1
+  max_fuel_consumption: MyString
+  min_fuel_consumption: MyString
+  middle_fuel_consumption: MyString
+  type_gears: MyString
+  dillers: 1

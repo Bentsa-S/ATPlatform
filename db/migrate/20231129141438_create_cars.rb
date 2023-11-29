@@ -19,10 +19,11 @@ class CreateCars < ActiveRecord::Migration[6.1]
       t.string :accident
       t.string :technical_condition
       t.integer :tel
-      t.integer :min_f_consumption
-      t.integer :max_f_consumption
-      t.integer :middle_f_consumption
-
+      t.string :max_fuel_consumption
+      t.string :min_fuel_consumption
+      t.string :middle_fuel_consumption
+      t.string :type_gears
+      t.integer :dillers
 
       t.timestamps
     end
