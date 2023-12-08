@@ -17,7 +17,11 @@
       <span><%= link_to 'Recent', recent_path%></span>
       <span><%= link_to 'Dealers', dealers_path%></span>
       <span><%= link_to 'Add', add_path%></span>
-      <span><%= link_to 'Registration', registration_path%></span>
+      <% if user_signet_in? %>
+        <%= current_user.first_name %>
+      <% else %>
+        <span><%= link_to 'Registration', registration_path%></span>
+      <% end %>
     </header>
 
     <main>

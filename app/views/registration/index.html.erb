@@ -1,16 +1,17 @@
 <h1>registration</h1>
 
 <%= form_with model: @user do |form| %>
-    <p>Iмя </p>
+    <p>Марка </p>
     <%= form.text_field :first_name %>
-    <p>Фамiлiя </p>
+    <p>Модель </p>
     <%= form.text_field :last_name %>
-    <p>Емаiл </p>
-    <%= form.email_field :email %>
-    <p>Пароль </p>
-    <%= form.password_field :password %>
-    <p>Повтор пароля </p>
+    <p>Модифiкацiя </p>
+    <%= form.text_field :email %>
+    <p>Рiк </p>
+    <%= form.text_field :password %>
+    <p>Рiк </p>
     <%= form.text_field :password_confirmation %>
     <%= form.submit "Додати авто" %>
+
 
 <%end%>

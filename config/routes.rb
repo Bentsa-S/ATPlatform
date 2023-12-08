@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get '/recommendation', to: 'recommendation#index'
+  get '/recommendation/:id', to: 'recommendation#show'
+
   get '/recent', to: 'recent#index'
   get '/dealers', to: 'dealers#index'
+  
   get '/add', to: 'add#index'
   post '/add', to: 'add#create'
   post '/add', to: 'add#new'
-  get '/recommendation/:id', to: 'recommendation#show'
   get '/registration', to: 'registration#index'
-  post '/registration', to: 'registration#new'
+  get '/registration', to: 'registration#new'
   post '/registration', to: 'registration#create'
 
 end

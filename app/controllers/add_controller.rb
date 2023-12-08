@@ -1,5 +1,6 @@
 class AddController < ApplicationController
     def index
+        
     end
     def new
         @car = Car.new
