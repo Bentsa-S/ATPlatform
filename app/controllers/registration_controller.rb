@@ -10,7 +10,7 @@ class RegistrationController < ApplicationController
         @user = User.new user_params
         if @user.save
           session[:user_id] = @user.id
-          redirect_to recommendation_path
+          redirect_to recommendation_index_path
         else
           render plain: params
         end

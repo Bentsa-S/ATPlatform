@@ -7634,3 +7634,1622 @@ Processing by RecommendationController#index as HTML
 Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.5ms | Allocations: 6330)
 
 
+Started GET "/" for 127.0.0.1 at 2023-12-09 17:58:54 +0200
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 336)
+Completed 200 OK in 52ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 2542)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-09 17:58:54 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.8ms | Allocations: 218)
+Completed 200 OK in 32ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 1810)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-09 17:58:54 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 44)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 388)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-09 17:59:06 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 8908)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 21351)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 1.7ms | Allocations: 22501)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-09 17:59:08 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 7884)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 12490)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 12870)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-09 17:59:10 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (1.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 31.5ms | Allocations: 12611)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 17208)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 2.1ms | Allocations: 18249)
+
+
+Started GET "/recent" for 127.0.0.1 at 2023-12-09 17:59:12 +0200
+Processing by RecentController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recent/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recent/index.html.erb:7
+  Rendered recent/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1253)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5851)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.4ms | Allocations: 6770)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-09 17:59:34 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.1ms | Allocations: 336)
+Completed 200 OK in 25ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-09 17:59:38 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 8931)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 16177)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 17580)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-09 17:59:40 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 7884)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 11877)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 12260)
+
+
+Started GET "/registration" for 127.0.0.1 at 2023-12-09 17:59:42 +0200
+Processing by RegistrationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/index.html.erb within layouts/application
+  Rendered registration/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2796)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 6795)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 7670)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-09 21:15:49 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.0ms | Allocations: 336)
+Completed 200 OK in 28ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+Started GET "/" for ::1 at 2023-12-09 21:16:04 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.5ms | Allocations: 218)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 839)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-09 21:16:10 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 45)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-09 21:16:14 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 8928)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 16174)
+Completed 200 OK in 28ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 17270)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-09 21:16:15 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 7883)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 11875)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 12254)
+
+
+Started GET "/registration" for 127.0.0.1 at 2023-12-09 21:16:17 +0200
+Processing by RegistrationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/index.html.erb within layouts/application
+  Rendered registration/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2795)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 6794)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 7668)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-10 13:34:47 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 29.2ms | Allocations: 336)
+Completed 200 OK in 58ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 2540)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 13:34:54 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 26.6ms | Allocations: 8985)
+  Rendered layout layouts/application.html.erb (Duration: 74.4ms | Allocations: 16276)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.0ms | Allocations: 17441)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 13:34:55 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 7884)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 11903)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 12283)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2023-12-10 13:34:57 +0200
+  
+Zeitwerk::NameError (expected file /home/slavik/Рабочий стол/kursova1/ATPlatform/app/controllers/sessions_controller.rb to define constant SessionsController, but didn't):
+  
+zeitwerk (2.6.12) lib/zeitwerk/loader/callbacks.rb:33:in `on_file_autoloaded'
+zeitwerk (2.6.12) lib/zeitwerk/kernel.rb:31:in `require'
+activesupport (6.1.7.6) lib/active_support/inflector/methods.rb:273:in `const_get'
+activesupport (6.1.7.6) lib/active_support/inflector/methods.rb:273:in `constantize'
+activesupport (6.1.7.6) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.7.6) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.7.6) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.7.6) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.7.6) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.7.6) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/add" for 127.0.0.1 at 2023-12-10 13:36:50 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 8370)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 12504)
+Completed 200 OK in 14ms (Views: 13.4ms | Allocations: 13066)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2023-12-10 13:36:53 +0200
+  
+TypeError (superclass must be a Class (Module given)):
+  
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/sessions/new" for 127.0.0.1 at 2023-12-10 13:38:44 +0200
+Processing by SessionsController#new as HTML
+  Parameters: {"onli"=>[:new, :create, :destroy]}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1299)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1364)
+Completed 500 Internal Server Error in 4ms (Allocations: 2233)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sessions", :onli=>[:new, :create, :destroy]}, missing required keys: [:id]
+Did you mean?  session_url
+               sessions_url
+               sessions_path
+               edit_session_url):
+    1: <h1> Log in </h1>
+    2: 
+    3: <%= form_with url: session_path do |f| %>
+    4:       <p>Модифiкацiя </p>
+    5:     <%= form.text_field :email %>
+    6: 
+  
+app/views/sessions/new.html.erb:3
+Started GET "/sessions/new" for 127.0.0.1 at 2023-12-10 13:39:15 +0200
+Processing by SessionsController#new as HTML
+  Parameters: {"onli"=>[:new, :create, :destroy]}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 4498)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4562)
+Completed 500 Internal Server Error in 8ms (Allocations: 5642)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000b9a0>
+Did you mean?  for
+               fork):
+    2: 
+    3: <%= form_with url: sessions_path do |f| %>
+    4:       <p>Модифiкацiя </p>
+    5:     <%= form.text_field :email %>
+    6: 
+    7:     <p>Рiк </p>
+    8:     <%= form.text_field :password %>
+  
+app/views/sessions/new.html.erb:5
+app/views/sessions/new.html.erb:3
+Started GET "/sessions/new" for 127.0.0.1 at 2023-12-10 13:39:36 +0200
+Processing by SessionsController#new as HTML
+  Parameters: {"onli"=>[:new, :create, :destroy]}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1417)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 5793)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 6899)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2023-12-10 13:39:48 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Додати авто", "onli"=>[:new, :create, :destroy]}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 9ms (Views: 6.8ms | Allocations: 2427)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2023-12-10 13:46:55 +0200
+Processing by SessionsController#new as HTML
+  Parameters: {"onli"=>[:new, :create, :destroy]}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1226)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5251)
+Completed 200 OK in 26ms (Views: 7.8ms | Allocations: 5742)
+
+
+Started GET "/registration" for 127.0.0.1 at 2023-12-10 13:46:59 +0200
+Processing by RegistrationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/index.html.erb within layouts/application
+  Rendered registration/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 3248)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 7274)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 8155)
+
+
+Started POST "/registration" for 127.0.0.1 at 2023-12-10 13:47:18 +0200
+Processing by RegistrationController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "first_name"=>"12", "last_name"=>"wwww", "email"=>"w@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "commit"=>"Додати авто"}
+[31mUnpermitted parameters: :authenticity_token, :commit[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/registration_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/registration_controller.rb:11:in `create'
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "12"], ["last_name", "wwww"], ["email", "w@gmail.com"], ["password_digest", "$2a$12$5EpOcU5cmGal/Vlxh5ikgO3QqlatBw8BYIgklBp7TFIyXYYyYM2SO"], ["created_at", "2023-12-10 11:47:18.427212"], ["updated_at", "2023-12-10 11:47:18.427212"]]
+  ↳ app/controllers/registration_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/registration_controller.rb:11:in `create'
+Redirected to http://127.0.0.1:3000/recommendation
+Completed 302 Found in 344ms (ActiveRecord: 8.2ms | Allocations: 9858)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 13:47:18 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 12642)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 17669)
+Completed 200 OK in 41ms (Views: 34.5ms | ActiveRecord: 1.4ms | Allocations: 18738)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 13:47:25 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 886)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5479)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.4ms | Allocations: 5885)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-10 13:47:42 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.6ms | Allocations: 336)
+Completed 200 OK in 26ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 2542)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 13:47:47 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 8983)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 21443)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.6ms | Allocations: 22609)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 13:47:47 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 7884)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 12490)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 12871)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-10 13:48:20 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.9ms | Allocations: 336)
+Completed 200 OK in 42ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 13:48:30 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 9060)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 16517)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 17991)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 13:48:31 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 7884)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 11902)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 12286)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2023-12-10 13:48:33 +0200
+Processing by SessionsController#new as HTML
+  Parameters: {"onli"=>[:new, :create, :destroy]}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1383)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5409)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 6297)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2023-12-10 13:48:40 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"w@gmail.com", "password"=>"[FILTERED]", "commit"=>"Додати авто", "onli"=>[:new, :create, :destroy]}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "w@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://127.0.0.1:3000/recommendation
+Completed 302 Found in 304ms (ActiveRecord: 0.5ms | Allocations: 5484)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 13:48:40 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 12609)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 17337)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.8ms | Allocations: 18379)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 13:52:19 +0200
+Processing by RecommendationController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/recommendation_controller.rb:3:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 30.5ms | Allocations: 11587)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 19653)
+Completed 200 OK in 73ms (Views: 62.1ms | ActiveRecord: 2.9ms | Allocations: 21005)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:07:28 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (2.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 50.5ms | Allocations: 13496)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 88.0ms | Allocations: 29455)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 4.0ms | Allocations: 32319)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000008458>
+Did you mean?  session_path):
+    19:       <span><%= link_to 'Add', add_path%></span>
+    20:       <% if user_signet_in? %>
+    21:         <%= current_user.first_name %>
+    22:         <span><%= link_to 'live', sessions_path%></span>
+    23:       <% else %>
+    24:         <span><%= link_to 'Sing In', registration_path%></span>
+    25:         <span><%= link_to 'log In', new_session_path%></span>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:07:46 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1237)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6366)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.5ms | Allocations: 7647)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:07:48 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController
+Did you mean?  new
+               destroy
+               create):
+  
+actionpack (6.1.7.6) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:08:16 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController
+Did you mean?  new
+               destroy
+               create):
+  
+actionpack (6.1.7.6) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:08:18 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1139)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 10088)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 2.8ms | Allocations: 11215)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy_session_path' for #<ActionView::Base:0x00000000009268>):
+    19:       <span><%= link_to 'Add', add_path%></span>
+    20:       <% if user_signet_in? %>
+    21:         <%= current_user.first_name %>
+    22:         <span><%= link_to 'live', destroy_session_path%></span>
+    23:       <% else %>
+    24:         <span><%= link_to 'Sing In', registration_path%></span>
+    25:         <span><%= link_to 'log In', new_session_path%></span>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:11:23 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController
+Did you mean?  new
+               destroy
+               create):
+  
+actionpack (6.1.7.6) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:11:27 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController
+Did you mean?  new
+               destroy
+               create):
+  
+actionpack (6.1.7.6) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:11:33 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 8944)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 13947)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms | Allocations: 15058)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:11:34 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 7883)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 12499)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 12874)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:11:36 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController
+Did you mean?  new
+               destroy
+               create):
+  
+actionpack (6.1.7.6) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:12:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/" for 127.0.0.1 at 2023-12-10 14:13:41 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.5ms | Allocations: 336)
+Completed 200 OK in 26ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2542)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:13:45 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 8936)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 22079)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.9ms | Allocations: 23635)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:13:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:15:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/" for 127.0.0.1 at 2023-12-10 14:15:11 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.4ms | Allocations: 215)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 971)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-10 14:15:20 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 44)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 390)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:15:24 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 8342)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 13517)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms | Allocations: 14610)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:15:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:18:03 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 7883)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 12527)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 12903)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:18:04 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 7881)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 12532)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.1ms | Allocations: 12911)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:18:06 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 7878)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 12511)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms | Allocations: 12886)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:18:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:19:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:20:01 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 8292)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 17196)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.1ms | Allocations: 18280)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete' for #<ActionView::Base:0x00000000009ab0>):
+    19:       <span><%= link_to 'Add', add_path%></span>
+    20:       <% if user_signet_in? %>
+    21:         <%= current_user.first_name %>
+    22:         <span><%= link_to 'live', session_path, data: {method: delete}%></span>
+    23:       <% else %>
+    24:         <span><%= link_to 'Sing In', registration_path%></span>
+    25:         <span><%= link_to 'log In', new_session_path%></span>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:21:34 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 8291)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 13321)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.1ms | Allocations: 14428)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:21:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:21:41 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 7882)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 12513)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.1ms | Allocations: 12888)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:23:20 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 8290)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 13303)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.3ms | Allocations: 14405)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:23:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:24:17 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 8290)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 17178)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.1ms | Allocations: 18257)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x0000000000a820>
+Did you mean?  session_path):
+    19:       <span><%= link_to 'Add', add_path%></span>
+    20:       <% if user_signet_in? %>
+    21:         <%= current_user.first_name %>
+    22:         <span><%= link_to 'live', sessions_path, data: {method: :delete}%></span>
+    23:       <% else %>
+    24:         <span><%= link_to 'Sing In', registration_path%></span>
+    25:         <span><%= link_to 'log In', new_session_path%></span>
+  
+app/views/layouts/application.html.erb:22
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:24:34 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 8294)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 13302)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 14409)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:24:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:24:38 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 7883)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 12526)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 12901)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:26:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:28:02 +0200
+  
+SyntaxError (/home/slavik/Рабочий стол/kursova1/ATPlatform/config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+  delete '/session' to 'session#destroy'
+                    ^~
+/home/slavik/Рабочий стол/kursova1/ATPlatform/config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:28:56 +0200
+  
+SyntaxError (/home/slavik/Рабочий стол/kursova1/ATPlatform/config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+  post '/session' to 'session#destroy'
+                  ^~
+/home/slavik/Рабочий стол/kursova1/ATPlatform/config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:29:42 +0200
+  
+SyntaxError (/home/slavik/Рабочий стол/kursova1/ATPlatform/config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+  get '/session' to 'session#destroy'
+                 ^~
+/home/slavik/Рабочий стол/kursova1/ATPlatform/config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:20: syntax error, unexpected `end', expecting end-of-input
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:29:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/add"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:31:28 +0200
+  
+NoMethodError (undefined method `recources' for #<ActionDispatch::Routing::Mapper:0x00007f0c7405ed08>
+Did you mean?  resources
+               resource):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:31:48 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 8261)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 13089)
+Completed 500 Internal Server Error in 15ms (Allocations: 13554)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"recommendation"}, missing required keys: [:id]
+Did you mean?  recommendation_url
+               recommendation_index_url
+               recommendation_index_path):
+    13: 
+    14:   <body>
+    15:     <header>
+    16:       <span><%= link_to 'Recommendation', recommendation_path%></span>
+    17:       <span><%= link_to 'Recent', recent_path%></span>
+    18:       <span><%= link_to 'Dealers', dealers_path%></span>
+    19:       <span><%= link_to 'Add', add_path%></span>
+  
+app/views/layouts/application.html.erb:16
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:32:23 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 8291)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 19629)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 1.2ms | Allocations: 20735)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:32:26 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 25.7ms | Allocations: 12593)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 17232)
+Completed 200 OK in 40ms (Views: 32.4ms | ActiveRecord: 5.5ms | Allocations: 18283)
+
+
+Started GET "/recent" for 127.0.0.1 at 2023-12-10 14:32:27 +0200
+Processing by RecentController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recent/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recent/index.html.erb:7
+  Rendered recent/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1226)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5865)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.4ms | Allocations: 6772)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:32:28 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 870)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 5514)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.4ms | Allocations: 5921)
+
+
+Started GET "/recommendation/1" for 127.0.0.1 at 2023-12-10 14:32:29 +0200
+Processing by RecommendationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recommendation_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/show.html.erb within layouts/application
+  Rendered recommendation/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 301)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4954)
+Completed 200 OK in 23ms (Views: 8.4ms | ActiveRecord: 0.8ms | Allocations: 6212)
+
+
+Started GET "/recommendation/1" for 127.0.0.1 at 2023-12-10 14:33:53 +0200
+Processing by RecommendationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/recommendation_controller.rb:6:in `show'
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recommendation_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/show.html.erb within layouts/application
+  Rendered recommendation/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8058)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.6ms | Allocations: 20856)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `add_path' for #<ActionView::Base:0x0000000000ee98>
+Did you mean?  add_index_path):
+    16:       <span><%= link_to 'Recommendation', recommendation_index_path%></span>
+    17:       <span><%= link_to 'Recent', recent_path%></span>
+    18:       <span><%= link_to 'Dealers', dealers_path%></span>
+    19:       <span><%= link_to 'Add', add_path%></span>
+    20:       <% if user_signet_in? %>
+    21:         <%= current_user.first_name %>
+    22:         <span><%= link_to 'live', session_path, data: {method: :delete}%></span>
+  
+app/views/layouts/application.html.erb:19
+Started GET "/recommendation/1" for 127.0.0.1 at 2023-12-10 14:34:19 +0200
+Processing by RecommendationController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/recommendation_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/show.html.erb within layouts/application
+  Rendered recommendation/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 289)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 8639)
+Completed 200 OK in 32ms (Views: 24.5ms | ActiveRecord: 0.7ms | Allocations: 10300)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:34:21 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 8662)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 13304)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.1ms | Allocations: 14186)
+
+
+Started POST "/add" for 127.0.0.1 at 2023-12-10 14:35:11 +0200
+Processing by AddController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brand"=>"aaaaa", "model"=>"aaaa", "modification"=>"aaaa", "year"=>"aaaa", "price"=>"111111", "run"=>"11111", "brown"=>"aaaaa", "engine_capaciti"=>"11111", "occasion"=>"aaaaa", "state"=>"aaaa", "color"=>"aaaa", "region"=>"aaaaa", "city"=>"aaaaa", "description"=>"aaaaa", "vin_code"=>"aaaaa", "accident"=>"aaaaa", "tel"=>"11111", "commit"=>"Додати авто"}
+[31mUnpermitted parameters: :authenticity_token, :commit[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/add_controller.rb:10:in `create'
+  [1m[36mCar Create (0.3ms)[0m  [1m[32mINSERT INTO "cars" ("brand", "model", "modification", "year", "price", "run", "brown", "engine_capaciti", "occasion", "state", "color", "region", "city", "description", "vin_code", "accident", "tel", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "aaaaa"], ["model", "aaaa"], ["modification", "aaaa"], ["year", 0], ["price", 111111], ["run", 11111], ["brown", "aaaaa"], ["engine_capaciti", "11111"], ["occasion", "aaaaa"], ["state", "aaaa"], ["color", "aaaa"], ["region", "aaaaa"], ["city", "aaaaa"], ["description", "aaaaa"], ["vin_code", "aaaaa"], ["accident", "aaaaa"], ["tel", 11111], ["created_at", "2023-12-10 12:35:11.830438"], ["updated_at", "2023-12-10 12:35:11.830438"]]
+  ↳ app/controllers/add_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/add_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 9.2ms | Allocations: 5580)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"recommendation"}, missing required keys: [:id]
+Did you mean?  recommendation_url
+               recommendation_index_url
+               recommendation_index_path):
+  
+app/controllers/add_controller.rb:11:in `create'
+Started POST "/add" for 127.0.0.1 at 2023-12-10 14:35:44 +0200
+Processing by AddController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "brand"=>"aaaaa", "model"=>"aaaa", "modification"=>"aaaa", "year"=>"aaaa", "price"=>"111111", "run"=>"11111", "brown"=>"aaaaa", "engine_capaciti"=>"11111", "occasion"=>"aaaaa", "state"=>"aaaa", "color"=>"aaaa", "region"=>"aaaaa", "city"=>"aaaaa", "description"=>"aaaaa", "vin_code"=>"aaaaa", "accident"=>"aaaaa", "tel"=>"11111", "commit"=>"Додати авто"}
+[31mUnpermitted parameters: :authenticity_token, :commit[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/add_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/add_controller.rb:10:in `create'
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("brand", "model", "modification", "year", "price", "run", "brown", "engine_capaciti", "occasion", "state", "color", "region", "city", "description", "vin_code", "accident", "tel", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "aaaaa"], ["model", "aaaa"], ["modification", "aaaa"], ["year", 0], ["price", 111111], ["run", 11111], ["brown", "aaaaa"], ["engine_capaciti", "11111"], ["occasion", "aaaaa"], ["state", "aaaa"], ["color", "aaaa"], ["region", "aaaaa"], ["city", "aaaaa"], ["description", "aaaaa"], ["vin_code", "aaaaa"], ["accident", "aaaaa"], ["tel", 11111], ["created_at", "2023-12-10 12:35:44.756142"], ["updated_at", "2023-12-10 12:35:44.756142"]]
+  ↳ app/controllers/add_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/add_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/recommendation
+Completed 302 Found in 53ms (ActiveRecord: 9.1ms | Allocations: 16576)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:35:44 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1297)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 9230)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 1.5ms | Allocations: 9878)
+
+
+Started GET "/recommendation/2" for 127.0.0.1 at 2023-12-10 14:35:50 +0200
+Processing by RecommendationController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/recommendation_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/show.html.erb within layouts/application
+  Rendered recommendation/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 62)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4701)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.3ms | Allocations: 5830)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:35:52 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1029)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5658)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.5ms | Allocations: 6063)
+
+
+Started GET "/recommendation/3" for 127.0.0.1 at 2023-12-10 14:35:53 +0200
+Processing by RecommendationController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/recommendation_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/show.html.erb within layouts/application
+  Rendered recommendation/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 57)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 4696)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 5625)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:35:55 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1029)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 5658)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.3ms | Allocations: 6063)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:36:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/session/new" for 127.0.0.1 at 2023-12-10 14:36:26 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 13.4ms | Allocations: 4233)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4297)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 5153)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessions_path' for #<ActionView::Base:0x00000000010fe0>
+Did you mean?  session_path):
+    1: <h1> Log in </h1>
+    2: 
+    3: <%= form_with url: sessions_path do |f| %>
+    4:       <p>Модифiкацiя </p>
+    5:     <%= f.text_field :email %>
+    6: 
+  
+app/views/sessions/new.html.erb:3
+Started GET "/session/new" for 127.0.0.1 at 2023-12-10 14:37:08 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1417)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 6447)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.1ms | Allocations: 7553)
+
+
+Started POST "/session" for 127.0.0.1 at 2023-12-10 14:37:14 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"wqw@gmail.com", "password"=>"[FILTERED]", "commit"=>"Додати авто"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wqw@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 292ms (ActiveRecord: 0.2ms | Allocations: 1509)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"recommendation"}, missing required keys: [:id]
+Did you mean?  recommendation_url
+               recommendation_index_url
+               recommendation_index_path):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started POST "/session" for 127.0.0.1 at 2023-12-10 14:38:23 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"wqw@gmail.com", "password"=>"[FILTERED]", "commit"=>"Додати авто"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wqw@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://127.0.0.1:3000/recommendation
+Completed 302 Found in 333ms (ActiveRecord: 0.7ms | Allocations: 5296)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:38:23 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 11763)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 16531)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 1.1ms | Allocations: 17580)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:38:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:39:06 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1275)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 6260)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.6ms | Allocations: 7416)
+
+
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:39:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/session" for 127.0.0.1 at 2023-12-10 14:39:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:40:01 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 8662)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 13653)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.1ms | Allocations: 14762)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:45:43 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 8280)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 16821)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.6ms | Allocations: 17314)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-10 14:46:03 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/slavik/.rvm/gems/ruby-2.7.6/gems/railties-6.1.7.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.9ms | Allocations: 336)
+Completed 200 OK in 50ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:46:07 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 8978)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 17524)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 18613)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"update", :controller=>"registration"}, missing required keys: [:id]
+Did you mean?  registration_url
+               registration_index_url
+               registration_index_path
+               new_registration_url):
+    21:         <%= current_user.first_name %>
+    22:         <span><%= link_to 'live', session_path%></span>
+    23:       <% else %>
+    24:         <span><%= link_to 'Sing In', registration_path%></span>
+    25:         <span><%= link_to 'log In', new_session_path%></span>
+    26:       <% end %>
+    27:     </header>
+  
+app/views/layouts/application.html.erb:24
+Started GET "/add" for 127.0.0.1 at 2023-12-10 14:46:42 +0200
+Processing by AddController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering add/index.html.erb within layouts/application
+  Rendered add/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 8371)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 12876)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 14026)
+
+
+Started GET "/recommendation" for 127.0.0.1 at 2023-12-10 14:46:46 +0200
+Processing by RecommendationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering recommendation/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" ORDER BY created_at DESC[0m
+  ↳ app/views/recommendation/index.html.erb:4
+  Rendered recommendation/index.html.erb within layouts/application (Duration: 31.8ms | Allocations: 13537)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 17571)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.8ms | Allocations: 18803)
+
+
+Started GET "/dealers" for 127.0.0.1 at 2023-12-10 14:46:49 +0200
+Processing by DealersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dealers/index.html.erb within layouts/application
+  Rendered dealers/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4147)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 5029)
+
+
+Started GET "/registration" for 127.0.0.1 at 2023-12-10 14:46:51 +0200
+Processing by RegistrationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/index.html.erb within layouts/application
+  Rendered registration/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2800)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 6827)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 7708)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2023-12-10 14:46:54 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1382)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 5407)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 6289)
+
+
+Started GET "/registration" for 127.0.0.1 at 2023-12-10 14:46:56 +0200
+Processing by RegistrationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registration/index.html.erb within layouts/application
+  Rendered registration/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2626)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 6652)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 7026)
+
+

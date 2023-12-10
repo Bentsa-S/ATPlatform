@@ -8,7 +8,7 @@ class AddController < ApplicationController
     def create
         @car = Car.new car_params
         if @car.save
-            redirect_to recommendation_path
+            redirect_to recommendation_index_path
         else
             render plain: params
         end

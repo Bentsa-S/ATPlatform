@@ -1,0 +1,12 @@
+<h1> Log in </h1>
+
+<%= form_with url: session_path do |f| %>
+      <p>Модифiкацiя </p>
+    <%= f.text_field :email %>
+
+    <p>Рiк </p>
+    <%= f.text_field :password %>
+
+    <%= f.submit "Додати авто" %>
+
+<%end%>
