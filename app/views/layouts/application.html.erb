@@ -19,7 +19,9 @@
       <span><%= link_to 'Add', add_index_path%></span>
       <% if user_signet_in? %>
         <%= current_user.first_name %>
-        <span><%= link_to 'live', session_path%></span>
+        <span><%= link_to 'live', session_path, data: {mathod: :delete} %></span>
+        <span><%= link_to 'save', edit_registration_path(current_user)%></span>
+        
       <% else %>
         <span><%= link_to 'Sing In', registration_index_path%></span>
         <span><%= link_to 'log In', new_session_path%></span>

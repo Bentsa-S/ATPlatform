@@ -1,0 +1,16 @@
+
+<%= form_with model: @user do |form| %>
+    <p>Марка </p>
+    <%= form.text_field :first_name %>
+    <p>Модель </p>
+    <%= form.text_field :last_name %>
+    <p>Модифiкацiя </p>
+    <%= form.text_field :email %>
+    <p>Рiк </p>
+    <%= form.text_field :password %>
+    <p>Рiк </p>
+    <%= form.text_field :password_confirmation %>
+    <%= form.submit "Додати авто" %>
+
+
+<%end%>

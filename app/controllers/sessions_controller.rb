@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
 
     def new
-      
     end
 
     def create
@@ -16,6 +15,6 @@ class SessionsController < ApplicationController
 
     def destroy
       session.delete :user_id
-      redirect_to recommendation_index_path
+        redirect_to recommendation_index_path
     end
 end
