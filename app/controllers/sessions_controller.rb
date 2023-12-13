@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
         session[:user_id] = user.id
         redirect_to recommendation_index_path
       else
-        redirect_to new_sessions_path
+        redirect_to new_session_path
       end
     end
 

@@ -2,15 +2,41 @@
 
 
 <% @cars.each do |car| %>
-    <%= link_to recommendation_path(car), :method => :get do %>
-        <%= car.model %>
-        <%= car.year %>
-        <%= car.run %>
-        <%= car.brown %>
-        <%= car.price %>
-        <%= car.city %>
-        <%= car.vin_code %>
-    <% end %>
-    <br>
-    
+    <%= link_to recommendation_path(car),  :method => :get do %>
+        <div class = "recommendation-big-container">
+            <p>dddd</p>
+            <div class = "recommendation-big-box">
+                <div>
+                    <div>
+                        <%= car.model %>
+                        <%= car.year %>
+                    </div>
+                    <div class = "recommendation-big-body">
+                        <div class = "flex-column">
+                            <div>
+                                <%= car.run %>
+                            </div>
+                            <div>
+                                <%= car.brown %>
+                            </div>
+                        </div>
+                        <div class = "flex-column">
+                            <div>
+                            <%= car.price %>
+                            </div>
+                            <div>
+                                <%= car.city %>    
+                            </div>
+                        </div>
+                        <div class = "vin-code">
+                            <div><%= car.vin_code %></div>
+                        </div> 
+                    </div>  
+                 
+                </div>
+            </div>
+        </div>
+
+        <br/>
+    <% end %>    
 <% end %>

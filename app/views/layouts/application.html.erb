@@ -7,24 +7,24 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_pack_tag 'manifest', 'data-turbolinks-track': 'reload' %>
   </head>
       <%# avto trading platform %>
 
   <body>
-    <header>
-      <span><%= link_to 'Recommendation', recommendation_index_path%></span>
-      <span><%= link_to 'Recent', recent_path%></span>
-      <span><%= link_to 'Dealers', dealers_path%></span>
-      <span><%= link_to 'Add', add_index_path%></span>
+    <header class = "manu">
+      <span><%= link_to 'Recommendation', recommendation_index_path, class: 'link-manu'%></span>
+      <span><%= link_to 'Recent', recent_path, class: 'link-manu'%></span>
+      <span><%= link_to 'Dealers', dealers_path, class: 'link-manu'%></span>
+      <span><%= link_to 'Add', add_index_path, class: 'link-manu'%></span>
       <% if user_signet_in? %>
         <%= current_user.first_name %>
-        <span><%= link_to 'live', session_path, data: {mathod: :delete} %></span>
-        <span><%= link_to 'save', edit_registration_path(current_user)%></span>
+        <span><%= link_to 'live', session_path, data: {mathod: :delete}, class: 'link-manu' %></span>
+        <span><%= link_to 'save', edit_registration_path(current_user), class: 'link-manu'%></span>
         
       <% else %>
-        <span><%= link_to 'Sing In', registration_index_path%></span>
-        <span><%= link_to 'log In', new_session_path%></span>
+        <span><%= link_to 'Sing In', registration_index_path, class: 'link-manu'%></span>
+        <span><%= link_to 'log In', new_session_path, class: 'link-manu'%></span>
       <% end %>
     </header>
 
